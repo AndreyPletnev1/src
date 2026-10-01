@@ -437,7 +437,6 @@ public final class Main {
             int[] ring = State.getRotationRing(rotatingCenter);
             int pivotX = px[rotatingCenter - 1];
             int pivotY = py[rotatingCenter - 1];
-            // Negative angle is the counterclockwise direction on the screen.
             double angle = -Math.PI / 3.0 * rotationProgress;
             double cos = Math.cos(angle);
             double sin = Math.sin(angle);
