@@ -28,17 +28,12 @@ public final class State {
         return cells[place - 1];
     }
 
-    public int[] toArray()
-    {
-        return cells.clone();
-    }
 
     public static int[] getCenters()
     {
         return new int[] {5, 6, 9, 10, 11, 14, 15};
     }
 
-    /** The six positions around a pivot, ordered in the direction of rotation. */
     public static int[] getRotationRing(int center)
     {
         for (int i = 0; i < rotations.length; i++)
@@ -87,7 +82,6 @@ public final class State {
         return true;
     }
 
-    /** Compact, unambiguous key used by search to avoid visiting a state twice. */
     public String key()
     {
         String key = "";
